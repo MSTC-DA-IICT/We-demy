@@ -27,7 +27,7 @@ This project is a sincere attempt by MSTC, DA-IICT to encourage Open Source cont
 * Intiate a `PR`.
 
 
-### :desktop_computer: Some resources to can learn from
+### :desktop_computer: Some resources you can learn from
   * [HTML](https://www.w3schools.com/html/default.asp)
   * [CSS](https://www.w3schools.com/css/default.asp)
 
