@@ -11,6 +11,7 @@ a {
   text-decoration: none;
 }
 
+
 .clear {
   clear: left;
 }
@@ -67,7 +68,11 @@ header {
   display: block;
   float: left;
 }
-
+.header-right a:hover{
+  background-color: yellow;
+  color: black;
+  transition: 0.5s;
+}
 .menu-icon {
   color: white;
   float: right;
