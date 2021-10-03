@@ -24,7 +24,9 @@ a {
 
 .top-wrapper {
   padding: 180px 0 100px 0;
-  background-color: rgb(129, 41, 41);
+  background-image: url("books8.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   color: rgb(255, 255, 255);
   text-align: center;
