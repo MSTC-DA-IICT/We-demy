@@ -24,7 +24,7 @@ a {
 
 .top-wrapper {
   padding: 180px 0 100px 0;
-  background-image: url("https://images.unsplash.com/photo-1572061487434-97315ba8a690?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHN0dWR5aW5nfGVufDB8fDB8YmxhY2t8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+  background-color: rgb(129, 41, 41);
   background-size: cover;
   color: rgb(255, 255, 255);
   text-align: center;
@@ -151,4 +151,51 @@ footer p {
 footer {
   padding-top: 30px;
   padding-bottom: 20px;
+}
+/*For navbar*/
+
+@media (max-width:800px) {
+
+   .menu-icon{
+      margin-right: 40px;
+      display: inline-block;
+      padding: 18px;
+   }
+   .menu-icon:hover{
+     background-color: white;
+     color: black;
+   }
+
+   .header-right{
+     position: absolute;
+     right: 20px;
+     display: flex;
+     flex-direction: column;
+     padding-top: 19px;
+     margin-right: 2px;   
+   }
+
+   .header-right a{
+     background: rgba(34, 49, 52, 0.9);
+     border: 1px solid rgb(255, 255, 255);
+     color: white;
+     margin: 0 3px 4px 0;
+     line-height: 40px;
+     display: none;
+     border-radius: 8px;
+   }
+
+   .menu-icon:hover .header-right a{
+     display: block;
+     opacity: 1;
+   }
+
+   .header-right a:hover{
+     display: inline-block;
+     transform: translateY(2px);
+     transform: translateX(-10px);
+     background: white;
+     border: 2px solid rgb(60, 123, 231);
+     color: rgb(60, 123, 231);
+   }
 }
