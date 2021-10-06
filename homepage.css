@@ -99,11 +99,6 @@ header {
   font-weight: normal;
 }
 
-.lesson {
-  float: left;
-  width: 25%;
-}
-
 .lesson-icon {
   position: relative;
 }
