@@ -88,6 +88,17 @@ header {
   background-color: #f7f7f7;
   text-align: center;
 }
+.lesson-wrapper2 {
+  padding-bottom: 80px;
+  margin-left: 12%;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+.lesson2{
+  float: left;
+  width: 25%;
+  margin: 1px 16px;
+}
 
 .heading {
   padding-top: 80px;
