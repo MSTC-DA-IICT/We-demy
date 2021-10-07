@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in page</title>
+    <style>
+        body
+        {
+            font-family:'Times New Roman', Times, serif;
+        }
+        .login
+        {
+            background-image: url("https://img.freepik.com/free-vector/hand-drawn-colorful-science-education-wallpaper_23-2148489183.jpg?size=626&ext=jpg");
+            height: 608px;
+            width: 1348px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            
+        }
+      
+        input[type=text],input[type=password]
+        {
+            width:30%;
+            margin: 8px 0;
+            padding: 12px 20px;
+            border:2px solid blue;
+            width:30%;
+        }
+        .submit
+        {
+            background-color: rgb(39, 39, 253);
+            width:25%;
+            padding: 12px 20px;
+        }
+        .submit:hover
+        {
+            opacity: 0.5;
+        }
+        .cnclbtn
+        {
+            background-color: rgb(247, 10, 57);
+            width: auto;
+            padding: 10px 18px;
+            margin: 10px 5px;
+        }
+  
+
+    </style>
+ </head>
+    <body>
+        
+        <form>
+            <div class="login">
+                <center>
+                <img src="We-demy.png" height="100px" width="200px">
+                <h1 style="color:rgb(11, 27, 252)"><b>STUDENT LOGIN FORM</b></h1>
+                <label><b>MAIL ADDRESS :</b></label>
+                <input type="text" placeholder="Enter mail address..." name="mail"required>
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label><b>PASSWORD :</b></label>
+                <input type="text" placeholder="Enter password..." name="password"required>
+                <br>
+                <input type="checkbox" checked="checked"><b>Remember me</b>
+                <br>
+                <br>
+                <button type="submit" class=submit><b>LOGIN</b></button>
+                <br>
+                <button type="button" class="cnclbtn"><b>CANCEL</b></button>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Forgot<a href="#"> password?</a>
+            </center>
+            </div>
+        </form>
+    </body>
+</html>
