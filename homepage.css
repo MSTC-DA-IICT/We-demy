@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 * {
   box-sizing: border-box;
 }
@@ -6,7 +7,9 @@ body {
   margin: 0;
   font-family: "Lucida Grande";
 }
-
+::-webkit-scrollbar{
+  display: none;
+}
 a {
   text-decoration: none;
 }
@@ -42,6 +45,67 @@ a {
   opacity: 0.7;
   margin-bottom: 3px;
 }
+
+/* Google, Facebook, Twitter sign up button css */
+
+.btn-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.signup-btn{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 380px;
+  margin: 10px 0px;
+  padding: 5px;
+  color: white;
+  font-size: 23px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-transform: capitalize;
+  outline: none;
+  border: none;
+}
+.signup-btn i{
+  width: 15%;
+  background-color: white;
+  border-radius: 2px;
+  padding: 11px 10px;
+  text-align: center;
+  font-size: 27px;
+}
+.signup-btn-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+}
+.btn1{
+  background-color: #DB4437;
+}
+.btn2{
+  background-color: #3b5998;
+}
+.btn3{
+  background-color: #1DA1F2;
+}
+.logo1{
+  color: #DB4437;
+}
+.logo2{
+  color: #3b5998 ;
+}
+.logo3{
+  color: #1DA1F2;
+}
+
+/* End of Google, Facebook, Twitter sign up button css */
 
 header {
   height: 65px;
