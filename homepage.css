@@ -254,10 +254,12 @@ footer {
     left:-2px;
     background-size: 400%;
     z-index: -1;
-    filter: blur(5px);
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
     width: calc(100% + 4px);
     height: calc(100% + 4px);
-    animation: glowing 20s linear infinite;
+    -webkit-animation: glowing 20s linear infinite;
+            animation: glowing 20s linear infinite;
     opacity: 0;
     transition: opacity .3s ease-in-out;
     border-radius: 10px;
@@ -287,13 +289,98 @@ footer {
     border-radius: 10px;
 }
 
+@-webkit-keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
 @keyframes glowing {
     0% { background-position: 0 0; }
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
 }
 
-/* contact us section */
+.footer-container {
+  display: flex;
+}
+
+.footer-container > div {
+  width: 33%;
+}
+
+.footer-col-left, .footer-col-center, .footer-col-right {
+  align-items: center;
+  flex-direction:column;
+}
+
+.footer-col-center h5, .footer-col-right h5 {
+  margin-top: 0;
+  display: flex;
+}
+
+.footer-col-center ul.nav {
+  margin-top: 0;
+  display: flex;
+}
+
+.footer-col-center ul.nav li {
+  list-style-type: none;
+  padding: 5px;
+
+}
+
+.footer-col-center, .footer-col-right, .footer-col-left, .icons {
+  display: flex;
+}
+
+.icons > div {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: rgba(34, 49, 52, 0.7);
+}
+
+.icons div:not(:last-child) {
+  margin-right: 5px;
+}
+
+
+.twitter, .facebook, .youtube {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.twitter:hover {
+  background-color: #2C99E7;
+  color:#fff;
+}
+.facebook:hover {
+  background-color: #4867AA;
+}
+
+.youtube:hover {
+  background-color: #F40E01;
+}
+
+.icons div > a {
+  color: #fff;
+}
+
+.footer-container h5 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.footer-col-center li a {
+  color: rgba(95,93,96);
+}
+
 .contactForm{
   width: 40%;
   padding: 40px;
