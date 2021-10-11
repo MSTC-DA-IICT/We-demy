@@ -317,10 +317,12 @@ footer {
 
 .footer-col-center h5, .footer-col-right h5 {
   margin-top: 0;
+  display: flex;
 }
 
 .footer-col-center ul.nav {
   margin-top: 0;
+  display: flex;
 }
 
 .footer-col-center ul.nav li {
@@ -329,7 +331,7 @@ footer {
 
 }
 
-.footer-col-center, .footer-col-right, .icons {
+.footer-col-center, .footer-col-right, .footer-col-left, .icons {
   display: flex;
 }
 
@@ -344,14 +346,34 @@ footer {
   background-color: rgba(34, 49, 52, 0.7);
 }
 
+.icons div:not(:last-child) {
+  margin-right: 5px;
+}
+
 
 .twitter, .facebook, .youtube {
   display: flex;
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .twitter:hover {
   background-color: #2C99E7;
   color:#fff;
+}
+.facebook:hover {
+  background-color: #4867AA;
+}
+
+.youtube:hover {
+  background-color: #F40E01;
+}
+
+.icons div > a {
+  color: #fff;
+}
+
+.footer-container h5 {
+  font-size: 1rem;
+  margin-bottom: 10px;
 }
