@@ -377,3 +377,7 @@ footer {
   font-size: 1rem;
   margin-bottom: 10px;
 }
+
+.footer-col-center li a {
+  color: rgba(95,93,96);
+}
