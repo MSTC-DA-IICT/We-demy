@@ -233,7 +233,7 @@ footer {
   padding-top: 30px;
   padding-bottom: 20px;
 }
-.glow-on-hover {
+.glow-on-hover{
     width: 220px;
     height: 50px;
     border: none;
@@ -418,13 +418,4 @@ footer {
   transition: 0.5s;
   color: #666;
 
-}
-.contactForm .inputBox input[type="submit"]{
-  width: 100px;
-  background: #00bcd4;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  padding: 10px;
-  font-size: 18px;
 }
