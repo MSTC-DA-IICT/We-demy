@@ -205,7 +205,7 @@ header {
   font-weight: normal;
 }
 
-.message-wrapper {
+.message-wrapper{
   border-bottom: 1px solid #eee;
   padding-bottom: 80px;
   text-align: center;
@@ -303,6 +303,7 @@ footer {
 
 .footer-container {
   display: flex;
+  padding-top: 30px;
 }
 
 .footer-container > div {
@@ -327,7 +328,10 @@ footer {
 .footer-col-center ul.nav li {
   list-style-type: none;
   padding: 5px;
+}
 
+.footer-col-center ul.nav li a:hover {
+  color: #202C2E;
 }
 
 .footer-col-center, .footer-col-right, .footer-col-left, .icons {
@@ -417,5 +421,10 @@ footer {
   pointer-events: none;
   transition: 0.5s;
   color: #666;
-
 }
+
+.contact-us {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 30px;
+}
+
