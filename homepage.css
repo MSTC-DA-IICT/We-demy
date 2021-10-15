@@ -402,12 +402,12 @@ footer {
 .contactForm{
   width: 40%;
   padding: 40px;
-  background: #fff;
+  background-image:url(images/college-student-gaa24bd728_1920.jpg) ;
 
 }
 .contactForm h2{
-  font-size: 30px;
-  color: #333;
+  font-size: 40px;
+  color:white;
   font-weight: 500;
 }
 .contactForm .inputBox{
@@ -425,6 +425,7 @@ footer {
   border-bottom: 2px solid #333;
   outline: none;
   resize: none; 
+  border-radius: 10px;
 }
 .contactForm .inputBox span{
   position: relative;
@@ -434,12 +435,13 @@ footer {
   margin: 10px 0;
   pointer-events: none;
   transition: 0.5s;
-  color: #666;
+  color: whitesmoke;
 }
 
 .contact-us {
   border-bottom: 1px solid #eee;
   padding-bottom: 30px;
+  background-image:url(images/college-student-gaa24bd728_1920.jpg) ;
 }
 
 .menu-open {
