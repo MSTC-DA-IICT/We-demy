@@ -472,6 +472,30 @@ footer {
     transform: translateX(-100%);
     transition: 0.3s all ease-in-out;
   }
+  {
+    text-align: right;
+    padding-right: 18px;
+    padding-top: 140px;
+     padding-bottom: 90px;
+    width: 13%;
+    background-color: lightpink;
+    color: white; 
+    display: inline;
+     align-items: right;
+    } 
+  
+  .recent{
+    text-align: right;
+    padding-right: 18px;
+    padding-top: 140px;
+     padding-bottom: 90px;
+    width: 13%;
+    background-color: lightpink;
+    color: white; 
+    display: inline;
+     align-items: right;
+    } 
+  
 
   .mobile-menu li {
     width: 100%;
