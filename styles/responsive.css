@@ -1,0 +1,30 @@
+.lessons{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lesson{
+    flex: 1;
+}
+
+@media screen and (max-width: 900px) {
+    .lesson{
+      width: 50%;
+    }
+}
+  
+@media screen and (max-width: 530px) {
+    .lesson{
+      width: 100%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .contactForm{
+      width: 100%;
+    }
+}
