@@ -1,236 +1,309 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>We-demy</title>
+    <link rel="stylesheet" href="homepage.css" />
+    <link
+      rel="stylesheet"
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>We-demy</title>
-  <link rel="stylesheet" href="homepage.css">
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Font awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-  <!-- Font awesome cdn link -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-</head>
-
-<body>
-  <header>
-    <div class="header-container">
-      <div class="header-left">
-        <img src="We-demy.png" alt="logo of We-demy" width="100px" height="66px">
-      </div>
-      <div class="header-right">
-
-        <div class="desktop-menu">
-          <a class="nav-links" href="#">Lessons</a>
-          <a class="nav-links" href="#">Sign up</a>
-          <a class="nav-links login" href="#">Log in</a>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="header-left">
+          <!-- <img
+            src="We-demy.png"
+            alt="logo of We-demy"
+            width="100px"
+            height="66px"
+          /> -->
+          <h1 style="color: white; margin-left: 2rem">WeDemy</h1>
         </div>
+        <div class="header-right">
+          <div class="desktop-menu">
+            <a class="nav-links" href="#lesson">Lessons</a>
+            <a class="nav-links" href="#contact">Sign up</a>
+            <a class="nav-links login" href="#contact">Log in</a>
+          </div>
 
-        <div class="mobile-menu-wrapper">
-          <span class="fa fa-bars menu-icon-mobile" id="mobile-menu-icon"></span>
+          <div class="mobile-menu-wrapper">
+            <span
+              class="fa fa-bars menu-icon-mobile"
+              id="mobile-menu-icon"
+            ></span>
 
-          <ul class="mobile-menu" id="menu">
-            <li><a href="#">Lessons</a></li>
-            <li><a href="#">Log in</a></li>
-            <li><a href="#">Sign up</a></li>
+            <ul class="mobile-menu" id="menu">
+              <li><a href="#">Lessons</a></li>
+              <li><a href="#">Log in</a></li>
+              <li><a href="#">Sign up</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="top-wrapper">
+      <div id="color-overlay"></div>
+      <div class="container">
+        <span><h1>ENJOY LEARNING.</h1></span>
+        <h1>SO YOU CAN ENJOY FUTURE.</h1>
+        <p>
+          We-demy is a website where you can learn anything remotely. <br />We
+          offer you a fully equipped courses to get you started.
+        </p>
+        <!-- <p>We offer you a fully equipped courses to get you started.</p> -->
+      </div>
+    </div>
+    <div id="lesson" class="lesson-wrapper">
+      <div class="container">
+        <div class="heading">
+          <h2>Learn Where to Get Started!</h2>
+        </div>
+        <div class="lessons">
+          <div class="lesson">
+            <div class="lesson-icon">
+              <a
+                ><img src="https://prog-8.com/images/html/advanced/html.png"
+              /></a>
+              <p>Maths</p>
+            </div>
+            <p class="text-contents">
+              This is Maths Class. Here you can study maths. You can solve the
+              standard problems and become the expert in maths.
+            </p>
+          </div>
+          <div class="lesson">
+            <div class="lesson-icon">
+              <a
+                ><img src="https://prog-8.com/images/html/advanced/jQuery.png"
+              /></a>
+              <p>Physics</p>
+            </div>
+            <p class="text-contents">
+              This is Physics Class. Here you can study physics. You can solve
+              the standard problems and become the expert in physics.
+            </p>
+          </div>
+          <div class="lesson">
+            <div class="lesson-icon">
+              <a
+                ><img src="https://prog-8.com/images/html/advanced/ruby.png"
+              /></a>
+              <p>Biology</p>
+            </div>
+            <p class="text-contents">
+              This is Biology Class. Here you can study biology. You can study
+              biology here and become the expert in biology.
+            </p>
+          </div>
+          <div class="lesson">
+            <div class="lesson-icon">
+              <a
+                ><img src="https://prog-8.com/images/html/advanced/php.png"
+              /></a>
+              <p>History</p>
+            </div>
+            <p class="text-contents">
+              This is History Class. Here you can study history. You can study
+              history here and become the expert in history.
+            </p>
+          </div>
+          <br />
+          <div class="lesson-wrapper2">
+            <div class="lesson2">
+              <div class="lesson-icon">
+                <a
+                  ><img src="https://prog-8.com/images/html/advanced/ruby.png"
+                /></a>
+                <p>Meteorology</p>
+              </div>
+              <p class="text-contents">
+                This is Meteorology Class. Here you can study meteorology. You
+                can study eteorology here and become the expert in eteorology.
+              </p>
+            </div>
+
+            <div class="lesson2">
+              <div class="lesson-icon">
+                <a
+                  ><img src="https://prog-8.com/images/html/advanced/php.png"
+                /></a>
+                <p>Astrology</p>
+              </div>
+              <p class="text-contents">
+                This is Astrology Class. Here you can study astrology. You can
+                study strology here and become the expert in astrology.
+              </p>
+            </div>
+
+            <div class="lesson2">
+              <div class="lesson-icon">
+                <a
+                  ><img
+                    src="https://prog-8.com/images/html/advanced/jQuery.png"
+                /></a>
+                <p>Geology</p>
+              </div>
+              <p class="text-contents">
+                This is Geology Class. Here you can study geology. You can study
+                geology here and become the expert in geology.
+              </p>
+            </div>
+          </div>
+
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+    <div id="contact" class="message-wrapper" style="display: flex">
+      <div class="container">
+        <div class="heading">
+          <h2>Ready to become this generation Albert Einstein?</h2>
+          <h3>Let's start learning from today!</h3>
+        </div>
+        <div class="btn-wrapper">
+          <button class="signup-btn btn1">
+            <i class="fab fa-google logo1"></i>
+            <!-- <i class="fab fa-google"></i> -->
+            <div class="signup-btn-title">Sign Up With Google</div>
+          </button>
+
+          <button class="signup-btn btn2">
+            <i class="fab fa-facebook logo2"></i>
+            <div class="signup-btn-title">Sign Up With Facebook</div>
+          </button>
+
+          <button class="signup-btn btn3">
+            <i class="fab fa-twitter logo3"></i>
+            <div class="signup-btn-title">Sign Up With Twitter</div>
+          </button>
+        </div>
+        <button class="start_learning glow-on-hover" type="button">
+          Start Learning
+        </button>
+      </div>
+      <section class="contact-us">
+        <div class="contactForm">
+          <form action="">
+            <h2>Contact us</h2>
+            <div class="inputBox">
+              <span>Full Name</span>
+              <input type="text" name="" required="required" />
+            </div>
+            <div class="inputBox">
+              <span>Email</span>
+              <input type="text" name="" required="required" />
+            </div>
+            <div class="inputBox">
+              <span>Type your message</span>
+              <textarea required="required"></textarea>
+            </div>
+
+            <div class="inputBox">
+              <button type="submit" class="start_learning glow-on-hover">
+                Send
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <!-- <section class="contact-us">
+        <div class="contactForm">
+          <form action="">
+            <h2>Contact us</h2>
+            <div class="inputBox">
+              <span>Full Name</span>
+              <input type="text" name="" required="required" />
+            </div>
+            <div class="inputBox">
+              <span>Email</span>
+              <input type="text" name="" required="required" />
+            </div>
+            <div class="inputBox">
+              <span>Type your message</span>
+              <textarea required="required"></textarea>
+            </div>
+
+            <div class="inputBox">
+              <button type="submit" class="start_learning glow-on-hover">
+                Send
+              </button>
+            </div>
+          </form>
+        </div>
+      </section> -->
+
+      <section class="container footer-container">
+        <div class="footer-col-left">
+          <img
+            src="We-demy.png"
+            alt="logo of We-demy"
+            width="30px"
+            height="40px"
+          />
+          <p>Enjoy Learning, So You Can Enjoy Future.</p>
+        </div>
+        <div class="footer-col-center">
+          <h5>Quick Links</h5>
+          <ul class="nav">
+            <li class="nav-item mb-2">
+              <a href="#"> Home </a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#"> About </a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#"> FAQs </a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#"> Features </a>
+            </li>
           </ul>
         </div>
-      </div>
-    </div>
-  </header>
-  <div class="top-wrapper">
-    <div class="container">
-      <h1>ENJOY LEARNING.</h1>
-      <h1>SO YOU CAN ENJOY FUTURE.</h1>
-      <p>We-demy is a website where you can learn anything remotely.</p>
-      <p>We offer you a fully equipped courses to get you started.</p>
-
-      <div class="btn-wrapper">
-        <button class="signup-btn btn1">
-          <i class="fab fa-google logo1"></i>
-          <div class="signup-btn-title">Sign Up With Google</div>
-        </button>
-
-        <button class="signup-btn  btn2">
-          <i class="fab fa-facebook logo2"></i>
-          <div class="signup-btn-title">Sign Up With Facebook</div>
-        </button>
-
-        <button class="signup-btn  btn3">
-          <i class="fab fa-twitter logo3"></i>
-          <div class="signup-btn-title">Sign Up With Twitter</div>
-        </button>
-      </div>
-
-    </div>
-  </div>
-  <div class="lesson-wrapper">
-    <div class="container">
-      <div class="heading">
-        <h2>Learn Where to Get Started!</h2>
-      </div>
-      <div class="lessons">
-        <div class="lesson">
-          <div class="lesson-icon">
-            <a><img src="https://prog-8.com/images/html/advanced/html.png"></a>
-            <p>Maths</p>
-          </div>
-          <p class="text-contents">This is Maths Class. Here you can study maths. You can solve the standard problems
-            and become the expert in maths.</p>
-        </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <a><img src="https://prog-8.com/images/html/advanced/jQuery.png"></a>
-            <p>Physics</p>
-          </div>
-          <p class="text-contents">This is Physics Class. Here you can study physics. You can solve the standard
-            problems and become the expert in physics.</p>
-        </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <a><img src="https://prog-8.com/images/html/advanced/ruby.png"></a>
-            <p>Biology</p>
-          </div>
-          <p class="text-contents">This is Biology Class. Here you can study biology. You can study biology here and
-            become the expert in biology.</p>
-        </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <a><img src="https://prog-8.com/images/html/advanced/php.png"></a>
-            <p>History</p>
-          </div>
-          <p class="text-contents">This is History Class. Here you can study history. You can study history here and
-            become the expert in history.</p>
-        </div>
-        <br>
-        <div class="lesson-wrapper2">
-
-          <div class="lesson2">
-            <div class="lesson-icon">
-              <a><img src="https://prog-8.com/images/html/advanced/ruby.png"></a>
-              <p>Meteorology</p>
+        <div class="footer-col-right">
+          <h5>Connect With Us:</h5>
+          <div class="icons">
+            <div class="twitter">
+              <a href="#">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
             </div>
-            <p class="text-contents">This is Meteorology Class. Here you can study meteorology. You can study eteorology
-              here and become the expert in eteorology.</p>
-          </div>
-
-          <div class="lesson2">
-            <div class="lesson-icon">
-              <a><img src="https://prog-8.com/images/html/advanced/php.png"></a>
-              <p>Astrology</p>
+            <div class="facebook">
+              <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
             </div>
-            <p class="text-contents">This is Astrology Class. Here you can study astrology. You can study strology here
-              and become the expert in astrology.</p>
-          </div>
-
-          <div class="lesson2">
-            <div class="lesson-icon">
-              <a><img src="https://prog-8.com/images/html/advanced/jQuery.png"></a>
-              <p>Geology</p>
+            <div class="youtube">
+              <a href="#">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
             </div>
-            <p class="text-contents">This is Geology Class. Here you can study geology. You can study geology here and
-              become the expert in geology.</p>
-          </div>
-
-        </div>
-
-        <div class="clear"></div>
-      </div>
-    </div>
-  </div>
-  <div class="message-wrapper">
-    <div class="container">
-      <div class="heading">
-        <h2>Ready to become this generation Albert Einstein?</h2>
-        <h3>Let's start learning from today!</h3>
-      </div>
-      <button class="start_learning glow-on-hover" type=button>Start Learning</button>
-    </div>
-  </div>
-
-  <footer>
-    <section class="contact-us">
-      <div class="contactForm">
-        <form action="">
-          <h2>Contact us</h2>
-          <div class="inputBox">
-            <span>Full Name</span>
-            <input type="text" name="" required="required">
-          </div>
-          <div class="inputBox">
-            <span>Email</span>
-            <input type="text" name="" required="required">
-          </div>
-          <div class="inputBox">
-            <span>Type your message</span>
-            <textarea required="required"></textarea>
-          </div>
-
-          <div class="inputBox">
-            <button type="submit" class="start_learning glow-on-hover">Send</button>
-          </div>
-        </form>
-      </div>
-    </section>
-
-    <section class="container footer-container">
-      <div class="footer-col-left">
-        <img src="We-demy.png" alt="logo of We-demy" width="30px" height="40px">
-        <p>Enjoy Learning, So You Can Enjoy Future.</p>
-      </div>
-      <div class="footer-col-center">
-        <h5>Quick Links</h5>
-        <ul class="nav">
-          <li class="nav-item mb-2">
-            <a href="#">
-              Home
-            </a>
-          </li>
-          <li class="nav-item mb-2">
-            <a href="#">
-              About
-            </a>
-          </li>
-          <li class="nav-item mb-2">
-            <a href="#">
-              FAQs
-            </a>
-          </li>
-          <li class="nav-item mb-2">
-            <a href="#">
-              Features
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer-col-right">
-        <h5>Connect With Us:</h5>
-        <div class="icons">
-          <div class="twitter">
-            <a href="#">
-              <i class="fa-brands fa-twitter"></i>
-            </a>
-          </div>
-          <div class="facebook">
-            <a href="#">
-              <i class="fa-brands fa-facebook-f"></i>
-            </a>
-          </div>
-          <div class="youtube">
-            <a href="#">
-              <i class="fa-brands fa-youtube"></i>
-            </a>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </footer>
 
-  </footer>
-
-  <script src="./main.js"></script>
-</body>
-
+    <script src="./main.js"></script>
+  </body>
 </html>
