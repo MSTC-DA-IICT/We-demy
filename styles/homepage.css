@@ -13,6 +13,17 @@ body {
 a {
   text-decoration: none;
 }
+.container{
+	width: 40%;
+	min-width: 450px;
+	
+	position: absolute;
+	transform: translate(-50%,-50%);
+	left: 50%;
+	top: 50%;
+	padding : 50px 30px;
+
+}
 
 
 .clear {
