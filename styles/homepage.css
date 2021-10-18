@@ -25,6 +25,14 @@ a {
   padding: 0 15px;
   margin: 0 auto;
 }
+.Container{  
+    position: relative;
+    margin: auto;
+    height: 40vw;
+    width: 40vw; 
+    background: url(clock.png) no-repeat;
+    background-size: 100%;
+}
 
 .top-wrapper {
   padding: 180px 0 100px 0;
