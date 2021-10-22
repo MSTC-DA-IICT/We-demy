@@ -5,35 +5,53 @@
 
 body {
   margin: 0;
-  font-family: "Lucida Grande";
+  font-family: 'Lucida Grande';
 }
-::-webkit-scrollbar{
+/* ::-webkit-scrollbar {
   display: none;
-}
+} */
 a {
   text-decoration: none;
 }
 
-
 .clear {
   clear: left;
+}
+.desktop-menu a {
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
 .container {
   max-width: 1170px;
   width: 100%;
-  padding: 0 15px;
+  padding: 5rem 15px;
   margin: 0 auto;
+  top: 5rem;
+  position: relative;
+  z-index: 2;
 }
-
+.container h1 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 .top-wrapper {
-  padding: 180px 0 100px 0;
-  background-image: url("https://images.unsplash.com/photo-1572061487434-97315ba8a690?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHN0dWR5aW5nfGVufDB8fDB8YmxhY2t8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+  padding: 50px;
+  background-image: url('https://images.unsplash.com/photo-1572061487434-97315ba8a690?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHN0dWR5aW5nfGVufDB8fDB8YmxhY2t8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
   background-size: cover;
+  min-height: 100vh;
   color: rgb(255, 255, 255);
   text-align: center;
 }
 
+#color-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.7;
+}
 .header-container {
   display: flex;
   align-items: center;
@@ -51,72 +69,79 @@ a {
 .top-wrapper h1 {
   opacity: 0.7;
   font-size: 45px;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
   margin-bottom: 10px;
+  line-height: 1.7rem;
 }
 
 .top-wrapper p {
+  margin-top: 2rem;
   opacity: 0.7;
   margin-bottom: 3px;
+  line-height: 1.7rem;
+  font-size: 1.2rem;
 }
 
 /* Google, Facebook, Twitter sign up button css */
 
-.btn-wrapper{
+.btn-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin-top: 20px;
+  margin-bottom: 1rem;
 }
-.signup-btn{
+
+.signup-btn {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 380px;
-  margin: 10px 0px;
+  /* margin: 0.5rem; */
+  width: 20rem;
+  margin: 0.8rem;
   padding: 5px;
   color: white;
-  font-size: 23px;
+  font-size: 1.2rem;
   font-weight: 500;
   letter-spacing: 1px;
-  border-radius: 2px;
+  border-radius: 20px;
   cursor: pointer;
   text-transform: capitalize;
   outline: none;
   border: none;
 }
-.signup-btn i{
+.signup-btn i {
   width: 15%;
   background-color: white;
-  border-radius: 2px;
+  border-radius: 50%;
   padding: 11px 10px;
   text-align: center;
   font-size: 27px;
 }
-.signup-btn-title{
+.signup-btn-title {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 85%;
 }
-.btn1{
-  background-color: #DB4437;
+.btn1 {
+  background-color: #db4437;
 }
-.btn2{
+.btn2 {
   background-color: #3b5998;
 }
-.btn3{
-  background-color: #1DA1F2;
+.btn3 {
+  background-color: #1da1f2;
 }
-.logo1{
-  color: #DB4437;
+.logo1 {
+  color: #db4437;
 }
-.logo2{
-  color: #3b5998 ;
+.logo2 {
+  color: #3b5998;
 }
-.logo3{
-  color: #1DA1F2;
+.logo3 {
+  color: #1da1f2;
 }
 
 /* End of Google, Facebook, Twitter sign up button css */
@@ -124,10 +149,11 @@ a {
 header {
   height: 65px;
   width: 100%;
-  background-color: rgba(34, 49, 52, 0.9);
-  position :fixed;
+  /* background-color: rgba(34, 49, 52, 0.9); */
+  position: fixed;
   top: 0;
   z-index: 10;
+  margin: 0.3rem;
 }
 
 .header-left {
@@ -140,23 +166,27 @@ header {
 }
 
 .header-right a {
-  line-height: 65px;
-  padding: 0 25px;
+  /* line-height: 65px; */
+  /* padding: 1rem; */
+  padding: 1rem 1.7rem;
+  margin: 0.5rem 1.5rem;
   color: white;
   display: block;
   float: left;
 }
-.header-right a:hover{
-  background-color: yellow;
-  color: black;
-  transition: 0.5s;
+.header-right a:hover {
+  /* background-color: white;
+  color: black; */
+  border-bottom: 2px solid white;
+  border-radius: 50%;
+  /* transition: 0.5s; */
 }
 .menu-icon {
   color: white;
   float: right;
   font-size: 25px;
   padding: 21px 21px 10px 0px;
-  display:none;
+  display: none;
 }
 
 .lesson-wrapper {
@@ -172,15 +202,19 @@ header {
   background-color: #f7f7f7;
   text-align: center;
 }
-.lesson2{
+.lesson2 {
   float: left;
   width: 25%;
   margin: 1px 16px;
 }
-
+.lesson-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .heading {
   padding-top: 80px;
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
   color: #5f5d60;
 }
 
@@ -196,8 +230,8 @@ header {
 .lesson-icon {
   position: relative;
 }
-.lesson-icon a:hover{
-  height : 400px;
+.lesson-icon a:hover {
+  height: 400px;
 }
 .lesson-icon p {
   position: absolute;
@@ -219,21 +253,34 @@ header {
   font-weight: normal;
 }
 
-.message-wrapper{
+.message-wrapper {
   border-bottom: 1px solid #eee;
   padding-bottom: 80px;
   text-align: center;
+  width: 100%;
+  justify-content: space-evenly;
 }
-
+.message-wrapper .container {
+  width: 50%;
+  top: 0;
+  margin-left: 0;
+  padding-left: 0;
+}
+.message-wrapper .contactForm {
+  position: relative;
+  top: 8rem;
+  /* margin-right: 10rem; */
+}
+.message-wrapper .contactForm .inputBox {
+  position: relative;
+  left: 0;
+  text-align: left;
+}
 .start_learning {
   padding: 15px 40px;
   /* background-color: #5dca88; */
   cursor: pointer;
   /* box-shadow: 0 7px #1a7940; */
-}
-
-.send-contact-btn{
-  text-align: center;
 }
 
 footer img {
@@ -249,72 +296,95 @@ footer {
   padding-top: 30px;
   padding-bottom: 20px;
 }
-.glow-on-hover{
-    width: 220px;
-    height: 50px;
-    border: none;
-    outline: none;
-    color: #fff;
-    background: #111;
-    cursor: pointer;
-    position: relative;
-    z-index: 0;
-    border-radius: 10px;
+.glow-on-hover {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
 }
 
 .glow-on-hover:before {
-    content: '';
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-    position: absolute;
-    top: -2px;
-    left:-2px;
-    background-size: 400%;
-    z-index: -1;
-    -webkit-filter: blur(5px);
-            filter: blur(5px);
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    -webkit-animation: glowing 20s linear infinite;
-            animation: glowing 20s linear infinite;
-    opacity: 0;
-    transition: opacity .3s ease-in-out;
-    border-radius: 10px;
+  content: '';
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  -webkit-animation: glowing 20s linear infinite;
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
 }
 
 .glow-on-hover:active {
-    color: #000
+  color: #000;
 }
 
 .glow-on-hover:active:after {
-    background: transparent;
+  background: transparent;
 }
 
 .glow-on-hover:hover:before {
-    opacity: 1;
+  opacity: 1;
 }
 
 .glow-on-hover:after {
-    z-index: -1;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #111;
-    left: 0;
-    top: 0;
-    border-radius: 10px;
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
 }
 
 @-webkit-keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
 
 @keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
 
 .footer-container {
@@ -324,14 +394,18 @@ footer {
 
 .footer-container > div {
   width: 33%;
+  margin: 1rem 2rem;
 }
 
-.footer-col-left, .footer-col-center, .footer-col-right {
+.footer-col-left,
+.footer-col-center,
+.footer-col-right {
   align-items: center;
-  flex-direction:column;
+  flex-direction: column;
 }
 
-.footer-col-center h5, .footer-col-right h5 {
+.footer-col-center h5,
+.footer-col-right h5 {
   margin-top: 0;
   display: flex;
 }
@@ -347,10 +421,13 @@ footer {
 }
 
 .footer-col-center ul.nav li a:hover {
-  color: #202C2E;
+  color: #202c2e;
 }
 
-.footer-col-center, .footer-col-right, .footer-col-left, .icons {
+.footer-col-center,
+.footer-col-right,
+.footer-col-left,
+.icons {
   display: flex;
 }
 
@@ -369,23 +446,24 @@ footer {
   margin-right: 5px;
 }
 
-
-.twitter, .facebook, .youtube {
+.twitter,
+.facebook,
+.youtube {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .twitter:hover {
-  background-color: #2C99E7;
-  color:#fff;
+  background-color: #2c99e7;
+  color: #fff;
 }
 .facebook:hover {
-  background-color: #4867AA;
+  background-color: #4867aa;
 }
 
 .youtube:hover {
-  background-color: #F40E01;
+  background-color: #f40e01;
 }
 
 .icons div > a {
@@ -398,30 +476,30 @@ footer {
 }
 
 .footer-col-center li a {
-  color: rgba(95,93,96);
+  color: rgba(95, 93, 96);
 }
+
 
 .contactForm{
   width: 60%;
   padding: 40px;
   background: #fff;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
 }
-.contactForm h2{
+.contactForm h2 {
   font-size: 30px;
   color: #333;
   font-weight: 500;
   text-align: center;
   padding-bottom: 15px;
 }
-.contactForm .inputBox{
+.contactForm .inputBox {
   position: relative;
   width: 100%;
   margin-top: 10px;
 }
 .contactForm .inputBox input,
-.contactForm .inputBox textarea{
+.contactForm .inputBox textarea {
   width: 100%;
   padding: 5px 0;
   font-size: 16px;
@@ -429,9 +507,9 @@ footer {
   border: none;
   border-bottom: 2px solid #333;
   outline: none;
-  resize: none; 
+  resize: none;
 }
-.contactForm .inputBox span{
+.contactForm .inputBox span {
   position: relative;
   left: 0;
   padding: 5px 0;
@@ -456,9 +534,9 @@ footer {
   #mobile-menu-icon {
     display: block;
     cursor: pointer;
-    color: #FFF;
+    color: #fff;
   }
-  
+
   .mobile-menu {
     display: flex;
     flex-direction: column;
@@ -482,7 +560,7 @@ footer {
   .mobile-menu li a {
     width: 100% !important;
   }
-  
+
   .desktop-menu {
     display: none;
   }
