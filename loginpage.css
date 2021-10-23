@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: "Lucida Grande";
-    background-color:white;
+    background-color:rgb(180, 238, 146);
   }
 .upperimage{
   position: absolute;
@@ -63,7 +63,7 @@ width: 452px;
 height: 98px;
 left: 11%;
 top: 20%;
-background: white;
+background: rgb(180, 238, 146);
 box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
 border-radius: 28px;
 text-align: center;
@@ -75,7 +75,7 @@ width: 452px;
 height: 98px;
 left: 11%;
 top: 40%;
-background: white;
+background: rgb(180, 238, 146);
 box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
 border-radius: 28px;
 text-align: center;
@@ -147,7 +147,7 @@ input[type=password]:focus{
 }
 .login-btn1 i{
   width: 15%;
-  background-color: white;
+  background-color: rgb(180, 238, 146);
   border-radius: 2px;
   padding: 11px 10px;
   text-align: center;
