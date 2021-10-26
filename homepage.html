@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>We-demy</title>
   <link rel="stylesheet" href="./styles/homepage.css">
-  <link rel="stylesheet" href="./styles/responsive.css">
+  <link rel="stylesheet" href="./styles/responsive.css">DARK-mode.css
+  <link rel="stylesheet" href="./styles/DARK-mode.css">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
   <!-- Font awesome cdn link -->
@@ -18,6 +19,14 @@
 
 <body>
   <header>
+    <button onclick="darkMode()"> Dark mode</button> 
+
+<script>
+function darkMode() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
     <div class="header-container">
       <div class="header-left">
         <img src="We-demy.png" alt="logo of We-demy" width="100px" height="66px">
